@@ -52,6 +52,13 @@ public class Vehicle {
         return distance;
     }
 
+//    overloading pentru "accelerate" mai jos putem avea aceleasi nume ca metoda, doar lista de parametrii sa fie diferita
+
+    public double accelerate(double speed) {
+      return accelerate(speed, 1);
+    }
+
+
 
 //    mai jos sunt getteri, i-am bagat cu ALT + INSERT
 

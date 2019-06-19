@@ -77,5 +77,12 @@ public class App
 //
         System.out.println("Total vehicles: " + Vehicle.getTotalCount());
 
+//        method overloading aici jos, gasesti restul metozii in Vehicle langa accelerating
+
+
+        car2.accelerate(100);
+
+        new AutoVehicle();
+
     }
 }
