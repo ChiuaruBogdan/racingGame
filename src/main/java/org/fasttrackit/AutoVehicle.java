@@ -11,6 +11,8 @@ public class AutoVehicle extends Vehicle{
 //    orice clasa apeleaza constructorul super clasei (cel de la care se extinde)
 
 //    scurtatura " ALT + INSERT" se poate folosi pentru a crea constructori
+// CTRL ALT O (sterge toate importurile care nu au ce cauta acolo
+
 
     public AutoVehicle (Engine engine) {
         this.engine = engine;
