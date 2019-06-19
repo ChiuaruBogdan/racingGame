@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import javax.print.attribute.standard.RequestingUserName;
+
 /**
  * Hello world!
  *
@@ -8,7 +10,11 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Car car = new Car();
+
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+
+        Car car = new Car(engine);
         car.name = "Dacia";
         car.color = "blue";
         car.doorCount = 4;
@@ -16,14 +22,11 @@ public class App
         car.fuelLevel = 50;
         car.running = true;
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
 
-        car.engine = engine;
         System.out.println("Our engine...");
         System.out.println(car.engine.manufacturer);
 
-        Car car2 = new Car();
+        Car car2 = new Car(engine);
         car2.name = "Pollo";
         car2.color = "red";
         car2.doorCount = 4;
