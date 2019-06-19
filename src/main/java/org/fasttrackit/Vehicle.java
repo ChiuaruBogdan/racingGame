@@ -1,6 +1,17 @@
 package org.fasttrackit;
 
 public class Vehicle {
+    //variabial statica mai jos
+
+
+    private static int totalCount;
+
+
+   public Vehicle() {
+   totalCount++;
+
+   }
+
 
 //    le-am facut private ca sa nu poata fi schimbate din alta parte decat din clasa
 
@@ -30,6 +41,7 @@ public class Vehicle {
 
         double spentFuel = distance / 100 * mileage;
         System.out.println("spentFuel: " + spentFuel + "l.");
+
 
 //        fuelLevel = fuelLevel - spentFuel;
         // same as above la travel distance
@@ -77,6 +89,8 @@ public class Vehicle {
         this.name = name;
     }
 
+
+
     public void setMileage(double mileage) {
         this.mileage = mileage;
     }
@@ -99,5 +113,9 @@ public class Vehicle {
 
     public void setTraveledDistance(double traveledDistance) {
         this.traveledDistance = traveledDistance;
+    }
+
+    public static int getTotalCount() {
+        return totalCount;
     }
 }

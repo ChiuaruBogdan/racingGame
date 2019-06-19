@@ -22,7 +22,6 @@ public class App
         car.setFuelLevel(50);
         car.setRunning(true); // ??
 
-
         System.out.println("Our engine...");
         System.out.println(car.engine.manufacturer);
 
@@ -35,6 +34,7 @@ public class App
         car2.setRunning(true);
 
         Car car3 = car;
+
 
         System.out.println(car.getName());
         System.out.println(car3.getName());
@@ -63,6 +63,19 @@ public class App
         System.out.println("Distance In App.main: " + distance);
 
 
+        System.out.println("Studying static variables ...");
+
+//        variabila statica mai jos (este exemplificata in app.main in ultimele sout-uri)
+
+//        car.totalCount = 1;
+//        System.out.println("Total count from car: " + car.totalCount);
+//
+//        car2.totalCount = 2;
+//        System.out.println("Total count from car after setting car2: " + car.totalCount);
+//        System.out.println("Total count from car2: " + car2.totalCount);
+//        System.out.println("Total count from Vehicle class: " + Vehicle.totalCount);
+//
+        System.out.println("Total vehicles: " + Vehicle.getTotalCount());
 
     }
 }

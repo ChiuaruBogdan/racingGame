@@ -14,10 +14,9 @@ public class AutoVehicle extends Vehicle{
 // CTRL ALT O (sterge toate importurile care nu au ce cauta acolo
 
 
-    public AutoVehicle (Engine engine) {
+    public AutoVehicle(Engine engine) {
         this.engine = engine;
-
-
     }
-
 }
+
+
