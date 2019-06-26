@@ -5,6 +5,7 @@ public class Car extends AutoVehicle{
 
     int doorCount;
 
+
     // ALT + ENTER pe erori pentru sugestii
 
     public Car(Engine engine) {
@@ -16,4 +17,15 @@ public class Car extends AutoVehicle{
 //        any constructor will try to call the "no-parameter" constructor of the parent class
 //        (adica nu mai trebuie invocat 'super' din cauza la constructor overloading
     }
+
+
+    public int getDoorCount() {
+        return doorCount;
+    }
+
+    public void setDoorCount(int doorCount) {
+        this.doorCount = doorCount;
+    }
+
+
 }
