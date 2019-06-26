@@ -84,5 +84,16 @@ public class App
 
         new AutoVehicle();
 
+
+//        testam override mai jos de today
+
+        System.out.println("Today...");
+        System.out.println(car.toString());
+
+        BatMobile batMobile = new BatMobile();
+        batMobile.setName("Crime Fighting Vehicle");
+
+        batMobile.accelerate(60, 1);
+        car.accelerate(60, 1);
     }
 }

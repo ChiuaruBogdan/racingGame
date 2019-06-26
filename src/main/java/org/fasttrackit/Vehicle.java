@@ -52,7 +52,20 @@ public class Vehicle {
         return distance;
     }
 
-//    overloading pentru "accelerate" mai jos putem avea aceleasi nume ca metoda, doar lista de parametrii sa fie diferita
+
+//    method signature must be the same, expect: (mai jos)
+//    1. mai jos co-variant return type
+//    (adica return object must inherit what the overwritten method was returning initially)
+//    2. Overriding method can allow larger access (adica sa schimbi din protected in public,
+//    dar nu invers in comparatie cu clasa parinte
+
+
+    @Override
+    public Vehicle clone() throws CloneNotSupportedException {
+        return new Vehicle();
+    }
+
+    //    overloading pentru "accelerate" mai jos putem avea aceleasi nume ca metoda, doar lista de parametrii sa fie diferita
 
     public double accelerate(double speed) {
       return accelerate(speed, 1);
@@ -125,4 +138,24 @@ public class Vehicle {
     public static int getTotalCount() {
         return totalCount;
     }
+
+
+//    mai jos e method overriding, ca sa nu mai arate hashcodul, bagat comanda din alt+insert si ales toString
+
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", running=" + running +
+                ", fuelLevel=" + fuelLevel +
+                ", traveledDistance=" + traveledDistance +
+                '}';
+    }
+
+
+
 }
