@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import javax.print.attribute.standard.RequestingUserName;
-
 /**
  * Hello world!
  *
@@ -123,8 +121,10 @@ public class App
 //        Vehicle testCar = new Car();
 ////        type casting
 //        ((Car) testCar).getDoorCount();
+        Game game = new Game();
 
 
+        game.start();
 
 
 
