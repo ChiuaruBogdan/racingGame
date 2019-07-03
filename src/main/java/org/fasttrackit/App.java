@@ -11,8 +11,18 @@ public class App
     public static void main( String[] args ) {
 
 //        am creat un nou obiect Game ca sa pot apela metoda "Start"
-        Game game = new Game();
-        game.start();
+//        Game game = new Game();
+//        game.start();
+
+// string pool
+//        String a = "test";
+//        String b = "test";
+//        String c = new String("test");
+//
+//        System.out.println(a == b);
+//        System.out.println(a == c);
+//        System.out.println(a.equals(c));
+
 
 //dai pe plus jos daca vrei sa vezi tot codul scris pana acum
 //        Engine engine = new Engine();
