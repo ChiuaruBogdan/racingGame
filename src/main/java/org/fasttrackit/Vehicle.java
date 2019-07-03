@@ -24,6 +24,19 @@ public class Vehicle {
     private double traveledDistance;
 
     public double accelerate(double speed, double duration) {
+
+//        conditii mai jos -->  return 0; trebuie ca sa se opreasca metoda, adica sa nu ajunga la accelerate
+        if (fuelLevel <= 0) {
+            System.out.println("You don't have enough fuel to accelerate. Fuel level: " + fuelLevel);
+            return 0;
+        }
+
+        if (speed > maxSpeed){
+            System.out.println("Requested speed is too high. Maximum allowed: " + maxSpeed);
+            return 0;
+        }
+
+
         //concatenation
         System.out.println(name + " is accelerating with "
                 + speed + " km/h for " + duration + "h.");
