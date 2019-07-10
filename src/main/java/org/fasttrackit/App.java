@@ -6,7 +6,7 @@ package org.fasttrackit;
  */
 public class App 
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
 
 //        am creat un nou obiect Game ca sa pot apela metoda "Start"
 //        Game game = new Game();
