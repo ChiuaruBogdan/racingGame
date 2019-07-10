@@ -9,10 +9,10 @@ public class Vehicle {
     private static int totalCount;
 
 
-   public Vehicle() {
-   totalCount++;
+    public Vehicle() {
+        totalCount++;
 
-   }
+    }
 
 
 //    le-am facut private ca sa nu poata fi schimbate din alta parte decat din clasa
@@ -33,7 +33,7 @@ public class Vehicle {
             return 0;
         }
 
-        if (speed > maxSpeed){
+        if (speed > maxSpeed) {
             System.out.println("Requested speed is too high. Maximum allowed: " + maxSpeed);
             return 0;
         }
@@ -83,9 +83,8 @@ public class Vehicle {
     //    overloading pentru "accelerate" mai jos putem avea aceleasi nume ca metoda, doar lista de parametrii sa fie diferita
 
     public double accelerate(double speed) {
-      return accelerate(speed, 1);
+        return accelerate(speed, 1);
     }
-
 
 
 //    mai jos sunt getteri, i-am bagat cu ALT + INSERT
@@ -123,7 +122,6 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     public void setMileage(double mileage) {
