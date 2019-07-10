@@ -17,6 +17,7 @@ public class Game {
         initializeTracks();
         displayTracks();
 
+        Track selectedTrack = getTrackSelectedByUser();
         int competitorCount = getCompetitorCountFromUser();
         for (int i = 0; i < competitorCount; i++) {
             addCompetitor();
@@ -42,6 +43,25 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    private Track getTrackSelectedByUser(){
+        System.out.println("Please enter track number");
+        try{
+        Scanner scanner = new Scanner(System.in);
+        int trackNumber = scanner.nextInt();
+
+        Track track = tracks[trackNumber - 1];
+        System.out.println("Selected track: " + track.getName());
+        return track;
+        }catch (InputMismatchException | ArrayIndexOutOfBoundsException e){
+            System.out.println("You entered an invalid track number. Please try again...");
+
+//            recursion - a methoda calling itself, se invoca metoda daca userul baga date gresite
+          return getTrackSelectedByUser();
+        }
+    }
+
+
 
     private int getCompetitorCountFromUser() throws Exception {
         System.out.println("Please enter vechile count: ");
